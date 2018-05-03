@@ -32,15 +32,22 @@ Y = np.array([[0, 0, 1, 1]]).T
 np.random.seed(1)
 
 # initialize weights randomly [-1..1]
-syn0 = 2 * np.random.random((3, 1)) - 1
+syn0 = 2 * np.random.random((3, 4)) - 1
+syn1 = 2 * np.random.random((4, 1)) - 1
 
 # training
 for i in range(10000):
     l0 = X
     l1 = sigmoid(l0.dot(syn0))
-    l1_error = Y - l1
+    l2 = sigmoid(l1.dot(syn1))
+    l2_error = Y - l2
+    l2_delta = l2_error * sigmoid(l2, True)
+
+    l1_error = l2_delta.dot(syn1.T)
     l1_delta = l1_error * sigmoid(l1, True)
     syn0 += l0.T.dot(l1_delta)
+    syn1 += l1.T.dot(l2_delta)
+
 
 print("Weights After Training:")
 print(syn0)
@@ -62,8 +69,7 @@ TX = np.array([[0, 0, 0],
                [1, 1, 0],
                [1, 1, 1]])
 
-
-Res = sigmoid(TX.dot(syn0))
+Res = sigmoid(sigmoid(TX.dot(syn0)).dot(syn1))
 Res2 = transfer(Res)
 for index in range(len(TX)):
     print('{0:10} {1:15} {2:10}'.format(TX[index], Res[index], Res2[index]))

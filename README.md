@@ -15,9 +15,9 @@ Overview
 
 ![Preview](readme/overview.png)
 
-Neural network
+Single layer Neural network
 
-![Preview](readme/neural_network.png)
+![Preview](readme/single_layer_neural_network.png)
 
 Training data set
 
@@ -49,6 +49,39 @@ Input      Out1            Out2
 [1 1 0]    [0.9999225]     [1.]      
 [1 1 1]    [0.99211997]    [1.]
 ```
+## Multi layer
+Multi layer Neural network
+
+![Preview](readme/multi_layer_neural_network.png)
+
+Multi layer training
+
+![Preview](readme/multi_layer_traning_flow.png)
+
+
+Result
+```
+Weights After Training:
+[[-2.45237664  4.24246073 -4.51602703  0.20084556]
+ [-0.37852498 -0.46226218  0.03227375 -0.22607559]
+ [ 0.70578881 -1.40848121  1.82311171  0.44840252]]
+
+
+TESTING
+- Out1: without transfer function
+- Out2: with transfer function
+
+Input      Out1            Out2      
+[0 0 0]    [0.27607508]    [0.]      
+[0 0 1]    [0.00510202]    [0.]      
+[0 1 0]    [0.18696632]    [0.]      
+[0 1 1]    [0.00421865]    [0.]      
+[1 0 0]    [0.99742832]    [1.]      
+[1 0 1]    [0.99493902]    [1.]      
+[1 1 0]    [0.99737872]    [1.]      
+[1 1 1]    [0.99437194]    [1.] 
+```
+
 
 Explanation:
 
