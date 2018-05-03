@@ -17,15 +17,15 @@ Overview
 
 Single layer Neural network
 
-![Preview](readme/single_layer_neural_network.png)
+<img src="readme/single_layer_neural_network.png" height="300px">
 
 Training data set
 
-![Preview](readme/training_set.png)
+<img src="readme/training_set.png" height="234px">
 
 => Single data set
 
-<img src="readme/single_set.png">
+<img src="readme/single_set.png" height="120px">
 
 Result
 ```
@@ -52,7 +52,7 @@ Input      Out1            Out2
 ## Multi layer
 Multi layer Neural network
 
-<img src="readme/multi_layer_neural_network.png">
+<img src="readme/multi_layer_neural_network.png" height="400px">
 
 Multi layer training
 
