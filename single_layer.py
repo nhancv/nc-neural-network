@@ -42,13 +42,16 @@ for i in range(10000):
     l1_delta = l1_error * sigmoid(l1, True)
     syn0 += l0.T.dot(l1_delta)
 
-print("Output After Training:")
-print(l1)
-
 print("Weights After Training:")
 print(syn0)
 
-print("Testing After Training")
+print("\n")
+print("TESTING")
+print(""
+      "- Out1: without transfer function\n"
+      "- Out2: with transfer function\n"
+      "")
+print('{0:10} {1:15} {2:10}'.format("Input", "Out1", "Out2"))
 # input testing
 TX = np.array([[0, 0, 0],
                [0, 0, 1],
@@ -58,7 +61,10 @@ TX = np.array([[0, 0, 0],
                [1, 0, 1],
                [1, 1, 0],
                [1, 1, 1]])
-print("- Without transfer function:")
-print(sigmoid(TX.dot(syn0)))
-print("- With transfer function:")
-print(transfer(sigmoid(TX.dot(syn0))))
+
+
+Res = sigmoid(TX.dot(syn0))
+Res2 = transfer(sigmoid(TX.dot(syn0)))
+for index in range(len(TX)):
+    print('{0:10} {1:15} {2:10}'.format(TX[index], Res[index], Res2[index]))
+

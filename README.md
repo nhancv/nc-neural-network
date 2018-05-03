@@ -1,6 +1,15 @@
 # Neural Network
 
-### Single layer
+### Training flow
+
+![Preview](readme/training_flow.png)
+
+### Testing flow
+
+![Preview](readme/testing_flow.png)
+
+
+## Single layer
 
 Overview
 
@@ -18,11 +27,25 @@ Training data set
 
 ![Preview](readme/single_set.png)
 
-Training flow
+Result
+```
+Weights After Training:
+[[ 9.67299303]
+ [-0.2078435 ]
+ [-4.62963669]]
 
-![Preview](readme/training_flow.png)
 
-Testing flow
+TESTING
+- Out1: without transfer function
+- Out2: with transfer function
 
-![Preview](readme/testing_flow.png)
-
+Input      Out1            Out2      
+[0 0 0]    [0.5]           [0.]      
+[0 0 1]    [0.009664]      [0.]      
+[0 1 0]    [0.44822538]    [0.]      
+[0 1 1]    [0.00786466]    [0.]      
+[1 0 0]    [0.99993704]    [1.]      
+[1 0 1]    [0.99358931]    [1.]      
+[1 1 0]    [0.9999225]     [1.]      
+[1 1 1]    [0.99211997]    [1.]
+```
