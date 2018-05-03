@@ -49,3 +49,12 @@ Input      Out1            Out2
 [1 1 0]    [0.9999225]     [1.]      
 [1 1 1]    [0.99211997]    [1.]
 ```
+
+Explanation:
+
+- numpy: https://docs.scipy.org/doc/numpy/reference/routines.html
+- random.seed: https://en.wikipedia.org/wiki/Deterministic_algorithm
+- sigmoid: https://en.wikipedia.org/wiki/Sigmoid_function
+- slope: https://en.wikipedia.org/wiki/Slope
+- sigmoid derivative: https://en.wikipedia.org/wiki/Logistic_function
+

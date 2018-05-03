@@ -28,7 +28,7 @@ X = np.array([[0, 0, 1],
 # output samples
 Y = np.array([[0, 0, 1, 1]]).T
 
-# seed random numbers to make calculation deterministic
+# seed random numbers to make calculation deterministic (Deterministic algorithm)
 np.random.seed(1)
 
 # initialize weights randomly [-1..1]
