@@ -52,7 +52,7 @@ Input      Out1            Out2
 ## Multi layer
 Multi layer Neural network
 
-<img src="readme/multi_layer_neural_network.png" height="400px">
+<img src="readme/multi_layer_neural_network.png" height="500px">
 
 Multi layer training
 
