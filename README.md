@@ -25,7 +25,7 @@ Training data set
 
 => Single data set
 
-![Preview](readme/single_set.png)
+<img src="readme/single_set.png">
 
 Result
 ```
