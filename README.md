@@ -52,11 +52,11 @@ Input      Out1            Out2
 ## Multi layer
 Multi layer Neural network
 
-![Preview](readme/multi_layer_neural_network.png)
+<img src="readme/multi_layer_neural_network.png">
 
 Multi layer training
 
-![Preview](readme/multi_layer_traning_flow.png)
+<img src="readme/multi_layer_traning_flow.png">
 
 
 Result
