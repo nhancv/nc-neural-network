@@ -70,7 +70,8 @@ def test(inputs):
     # redefine the model in terms of that new input shape
     output = tf.sigmoid(tf.matmul(x, syn0))
 
-    print(inputs, '1' if (sess.run(output, feed_dict={x: [inputs]})[0][0] > 0.5) else '0')
+    res = sess.run(output, feed_dict={x: [inputs]})[0][0]
+    print(inputs, '{0:15} => {1:2}'.format(res, '1' if (res > 0.5) else '0'))
 
 
 print('Start training')
